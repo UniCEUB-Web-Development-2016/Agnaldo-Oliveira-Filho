@@ -13,7 +13,7 @@ class RequestController
 			    $protocol,
 				$method,
 				$uri_array[2],
-				$this->getParams($uri_array[3]), 
+				$this->getParams($uri_array[3]),
 				$server_addr);
 		
 	}	
@@ -21,17 +21,15 @@ class RequestController
 
 	public function getParams($string_params)
 	{
-		$a = str_replace ("?" , "" , $string_params);
-
-		$b = explode("&", $a);
-		
+		$replace = str_replace ("?" , "" , $string_params);
+		$params = explode("&", $replace);
 		$params_map = array();
 
-		foreach ($b as $value) {
-			$c = explode("=", $value);
-
-			$params_map[$c[0]] = $c[1];
+		foreach ($params as $value) {
+			$explodeValue = explode("=", $value);
+			$params_map[$explodeValue[0]] = $explodeValue[1];
 		}
+
 		return $params_map;	
 	}
 

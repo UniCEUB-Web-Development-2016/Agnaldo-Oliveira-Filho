@@ -3,6 +3,8 @@
 include_once "model/Request.php";
 include_once "control/UserController.php";
 include_once "control/SeriesController.php";
+include_once "control/EpisodeController.php";
+include_once "control/ListaController.php";
 
 class ResourceController
 {
@@ -11,6 +13,8 @@ class ResourceController
 	[
 		"series" => "SeriesController",
 		"user" => "UserController",
+		"episode" => "EpisodeController",
+		"lista" => "ListaController",
 	];
 
 	public function createResource($request)

@@ -12,13 +12,13 @@ class User
 
     public function __construct($firstName, $lastName, $email, $birthDate, $city, $state, $password)
     {
-        $this->setFirstName($firstName);
-        $this->setLastName($lastName);
-        $this->setEmail($email);
-        $this->setBirthDate($birthDate);
-        $this->setcity($city);
-        $this->setState($state);
-        $this->setPassword($password);
+        $this->firstName = $firstName;
+        $this->lastName = $lastName;
+        $this->email = $email;
+        $this->birthDate = $birthDate;
+        $this->city = $city;
+        $this->state = $state;
+        $this->password = $password;
     }
 
     public function setFirstName($firstName)
