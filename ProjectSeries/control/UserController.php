@@ -18,7 +18,7 @@ class UserController
             $params["state"],
             $params["password"]);
 
-        $db = new DatabaseConnector("localhost", "ProjectSeries", "mysql", "", "root", "");
+        $db = new DBConnector("localhost", "ProjectSeries", "mysql", "", "root", "");
 
         $conn = $db->getConnection();
 
