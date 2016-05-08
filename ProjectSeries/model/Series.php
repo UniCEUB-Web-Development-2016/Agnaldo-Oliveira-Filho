@@ -2,29 +2,29 @@
 
 class Series
 {
-    private $name;
+    private $name_series;
     private $initials;
     private $category;
-    private $year;
+    private $year_series;
     private $director;
 
-    public function __construct($name,$initials, $category, $year, $director)
+    public function __construct($name_series,$initials, $category, $year_series, $director)
     {
-        $this->name = $name;
+        $this->name_series = $name_series;
         $this->initials = $initials;
         $this->category = $category;
-        $this->year = $year;
+        $this->year_series = $year_series;
         $this->director = $director;
     }
 
-    public function setName($name)
+    public function setNameSeries($name_series)
     {
-        $this->name = $name;
+        $this->name_series = $name_series;
     }
 
-    public function getName()
+    public function getNameSeries()
     {
-        return $this->name;
+        return $this->name_series;
     }
 
     public function getInitials()
@@ -47,14 +47,14 @@ class Series
         return $this->category;
     }
 
-    public function setYear($year)
+    public function setYearSeries($year_series)
     {
-        $this->year = $year;
+        $this->year_series = $year_series;
     }
 
-    public function getYear()
+    public function getYearSeries()
     {
-        return $this->year;
+       return $this->year_series;
     }
 
     public function setDirector($director)
