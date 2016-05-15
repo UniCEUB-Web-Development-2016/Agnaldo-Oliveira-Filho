@@ -13,13 +13,13 @@ lista	CREATE TABLE `lista` (
  	`series_name` varchar(50) NOT NULL,
  	`season` int(11) NOT NULL,
  	`episode` varchar(50) NOT NULL,
- 	`position` int(11) NOT NULL,
+ 	`location` int(11) NOT NULL,
  	PRIMARY KEY (`idt_lista`))
 
 
 series	CREATE TABLE `series` (
  	`cod_series` int(11) NOT NULL AUTO_INCREMENT,
- 	`series_name` varchar(30) NOT NULL,
+ 	`name_series` varchar(30) NOT NULL,
  	`initials` varchar(15) NOT NULL,
  	`category` varchar(20) NOT NULL,
  	`year_series` int(11) NOT NULL,
