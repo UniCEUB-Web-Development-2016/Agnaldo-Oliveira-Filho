@@ -64,4 +64,22 @@ class UserController
 
         return substr($criteria, 0, -4);
     }
+
+
+    public function remove($request)
+    {
+        $params = $request->get_params();
+
+        $db = new DBConnector("localhost", "ProjectSeries", "mysql", "", "root", "");
+
+        $conn = $db->getConnection();
+
+        $result = $conn->prepare("DELETE FROM user WHERE email = ?");
+
+        $result->bindParam(1, $params['email']);
+
+        $result->execute();
+
+        return $result;
+    }
 }

@@ -1,7 +1,36 @@
 <?php
 
+include_once "model/Request.php";
+include_once "model/Episode.php";
+include_once "database/DBConnector.php";
+
 class EpisodeController
 {
+
+    public function register($request)
+    {
+        $params = $request->get_params();
+        $episode = new Episode
+        ($params["series_name"],
+            $params["season"]);
+
+        $db = new DBConnector("localhost", "ProjectSeries", "mysql", "", "root", "");
+
+        $conn = $db->getConnection();
+
+
+        return $conn->query($this->generateInsertQuery($episode));
+    }
+
+    private function generateInsertQuery($episode)
+    {
+        $query =  "INSERT INTO episode (series_name, season) VALUES
+        ('".$episode->getSeriesName()."','".
+            $episode->getSeason()."')";
+
+        return $query;
+    }
+
     public function search($request)
     {
         $params = $request->get_params();

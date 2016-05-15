@@ -15,7 +15,7 @@ class ListaController
             $params["episode"],
             $params["location"]);
 
-        $db = new DatabaseConnector("localhost", "ProjectSeries", "mysql", "", "root", "");
+        $db = new DBConnector("localhost", "ProjectSeries", "mysql", "", "root", "");
 
         $conn = $db->getConnection();
 
@@ -59,4 +59,22 @@ class ListaController
 
         return substr($criteria, 0, -4);
     }
+
+    public function remove($request)
+    {
+        $params = $request->get_params();
+
+        $db = new DBConnector("localhost", "ProjectSeries", "mysql", "", "root", "");
+
+        $conn = $db->getConnection();
+
+        $result = $conn->prepare("DELETE FROM lista WHERE location = ?");
+
+        $result->bindParam(1, $params['location']);
+
+        $result->execute();
+
+        return $result;
+    }
+
 }
