@@ -22,43 +22,134 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="UserController.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/control/UserController.php">
+      <file leaf-file-name="EpisodioController.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/control/EpisodioController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-33.76923">
-              <caret line="72" column="60" selection-start-line="72" selection-start-column="60" selection-end-line="72" selection-end-column="60" />
+            <state vertical-scroll-proportion="-10.269231">
+              <caret line="22" column="23" selection-start-line="22" selection-start-column="23" selection-end-line="22" selection-end-column="23" />
               <folding>
-                <marker date="1463349004405" expanded="true" signature="746:1089" placeholder="INSERT INTO user... " />
-                <marker date="1463349004405" expanded="true" signature="1417:1491" placeholder="SELECT first... user" />
-                <marker date="1463349004405" expanded="true" signature="2065:2097" placeholder="DELETE FROM " />
+                <marker date="1463953256525" expanded="true" signature="431:639" placeholder="SELECT serie... episode" />
+                <marker date="1463953256525" expanded="true" signature="431:742" placeholder="SELECT s.nam... episodio" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SeriesController.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="PartEspecialController.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/control/PartEspecialController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-11.115385">
+              <caret line="17" column="51" selection-start-line="17" selection-start-column="51" selection-end-line="17" selection-end-column="51" />
+              <folding>
+                <marker date="1463964283776" expanded="true" signature="439:494" placeholder="SELECT cod_e... part_especial" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="PerfilUsuarioController.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/control/PerfilUsuarioController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-15.153846">
+              <caret line="79" column="57" selection-start-line="79" selection-start-column="57" selection-end-line="79" selection-end-column="57" />
+              <folding>
+                <marker date="1463964743129" expanded="true" signature="625:715" placeholder="INSERT INTO perfil_usuario... " />
+                <marker date="1463964743129" expanded="true" signature="1034:1078" placeholder="SELECT nme_p... perfil_usuario" />
+                <marker date="1463964743129" expanded="true" signature="1813:1919" placeholder="UPDATE perfi... " />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="perfil_usuario.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/model/perfil_usuario.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-4.576923">
+              <caret line="7" column="10" selection-start-line="7" selection-start-column="10" selection-end-line="7" selection-end-column="10" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SeriesController.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/control/SeriesController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.26333907">
-              <caret line="9" column="5" selection-start-line="9" selection-start-column="5" selection-end-line="9" selection-end-column="5" />
+            <state vertical-scroll-proportion="-12.423077">
+              <caret line="19" column="76" selection-start-line="19" selection-start-column="76" selection-end-line="19" selection-end-column="76" />
               <folding>
-                <marker date="1463347795324" expanded="true" signature="705:998" placeholder="INSERT INTO user... " />
-                <marker date="1463347795324" expanded="true" signature="1326:1406" placeholder="SELECT name_... series" />
+                <marker date="1463957477856" expanded="true" signature="428:448" placeholder="SELECT * FRO... series" />
+                <marker date="1463957477856" expanded="true" signature="428:455" placeholder="SELECT name_... series" />
+                <marker date="1463957477856" expanded="true" signature="428:463" placeholder="SELECT * FRO... series" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ListaController.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/control/ListaController.php">
+      <file leaf-file-name="TemporadaController.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/control/TemporadaController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-16.461538">
-              <caret line="70" column="51" selection-start-line="70" selection-start-column="51" selection-end-line="70" selection-end-column="51" />
+            <state vertical-scroll-proportion="-13.730769">
+              <caret line="21" column="59" selection-start-line="21" selection-start-column="59" selection-end-line="21" selection-end-column="59" />
               <folding>
-                <marker date="1463350350594" expanded="true" signature="657:951" placeholder="INSERT INTO lista... " />
-                <marker date="1463350350594" expanded="true" signature="1279:1342" placeholder="SELECT serie... lista" />
-                <marker date="1463350350594" expanded="true" signature="1915:1951" placeholder="DELETE FROM " />
+                <marker date="1463950766200" expanded="true" signature="433:568" placeholder="SELECT s.nam... temporada" />
+                <marker date="1463950766200" expanded="true" signature="433:573" placeholder="SELECT s.nam... temporada" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="StatusEpisodioUsuarioController.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/control/StatusEpisodioUsuarioController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-15.153846">
+              <caret line="59" column="57" selection-start-line="59" selection-start-column="57" selection-end-line="59" selection-end-column="57" />
+              <folding>
+                <marker date="1463964879449" expanded="true" signature="459:512" placeholder="SELECT nme_s... status_episodio_usuario" />
+                <marker date="1463964879449" expanded="true" signature="1244:1389" placeholder="UPDATE statu... " />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="UsuarioController.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/control/UsuarioController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-18.423077">
+              <caret line="94" column="5" selection-start-line="94" selection-start-column="5" selection-end-line="94" selection-end-column="5" />
+              <folding>
+                <marker date="1463964846737" expanded="true" signature="756:1069" placeholder="INSERT INTO user... " />
+                <marker date="1463964846737" expanded="true" signature="1388:1557" placeholder="SELECT first... user" />
+                <marker date="1463964846737" expanded="true" signature="1388:1558" placeholder="SELECT u.fir... usuario" />
+                <marker date="1463964846737" expanded="true" signature="2299:2338" placeholder="UPDATE usuar... " />
+                <marker date="1463964846737" expanded="true" signature="2299:2353" placeholder="UPDATE usuar... " />
+                <marker date="1463964846737" expanded="true" signature="2299:2384" placeholder="UPDATE usuar... " />
+                <marker date="1463964846737" expanded="true" signature="2887:2922" placeholder="DELETE FROM " />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="UsuarioEpisodioController.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/control/UsuarioEpisodioController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="1.2702237">
+              <caret line="51" column="8" selection-start-line="51" selection-start-column="8" selection-end-line="51" selection-end-column="8" />
+              <folding>
+                <marker date="1463970598814" expanded="true" signature="831:1240" placeholder="INSERT INTO usuario_episodio... " />
+                <marker date="1463970598814" expanded="true" signature="1559:1677" placeholder="SELECT cod_e... usuario_episodio" />
+                <marker date="1463970598814" expanded="true" signature="2409:2521" placeholder="UPDATE usuar... " />
+                <marker date="1463970598814" expanded="true" signature="3024:3083" placeholder="DELETE FROM " />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="usuario_episodio.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/model/usuario_episodio.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-9.153846">
+              <caret line="72" column="0" selection-start-line="72" selection-start-column="0" selection-end-line="72" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -76,24 +167,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/../Desenvolvimento_Web/Math.php" />
-        <option value="$PROJECT_DIR$/../Desenvolvimento_Web/index.html" />
-        <option value="$PROJECT_DIR$/../Desenvolvimento_Web/Controller.php" />
-        <option value="$PROJECT_DIR$/../Desenvolvimento_Web/index_fb.html" />
-        <option value="$PROJECT_DIR$/../Desenvolvimento_Web/View/UserRegister.php" />
-        <option value="$PROJECT_DIR$/../Desenvolvimento_Web/View/layoutManager.php" />
-        <option value="$PROJECT_DIR$/../Desenvolvimento_Web/View/index.php" />
-        <option value="$PROJECT_DIR$/../Desenvolvimento_Web/control/UserController.php" />
-        <option value="$PROJECT_DIR$/../Desenvolvimento_Web/index.php" />
-        <option value="$PROJECT_DIR$/../Desenvolvimento_Web/Class6_MVC_first/view/LayoutManagerJS.js" />
-        <option value="$PROJECT_DIR$/../Desenvolvimento_Web/Class6_MVC_first/control/ControlManager.php" />
-        <option value="$PROJECT_DIR$/../Desenvolvimento_Web/Class10_Request_Router/control/ControlManager.php" />
-        <option value="$PROJECT_DIR$/../Desenvolvimento_Web/Class10_Request_Router/util/RequestRouter.php" />
-        <option value="$PROJECT_DIR$/../Desenvolvimento_Web/Class10_Request_Router/control/ResourceController.php" />
-        <option value="$PROJECT_DIR$/../Desenvolvimento_Web/Class11_Resource_Controller/control/SeriesController.php" />
-        <option value="$PROJECT_DIR$/../Desenvolvimento_Web/Class11_Resource_Controller/control/ResourceController.php" />
-        <option value="$PROJECT_DIR$/../Desenvolvimento_Web/Class11_Resource_Controller/util/DBConnector.php" />
-        <option value="$PROJECT_DIR$/../Desenvolvimento_Web/Class11_Resource_Controller/index.php" />
         <option value="$PROJECT_DIR$/../Desenvolvimento_Web/Class11_Resource_Controller/model/Episode.php" />
         <option value="$PROJECT_DIR$/../Desenvolvimento_Web/Class11_Resource_Controller/control/EpisodeController.php" />
         <option value="$PROJECT_DIR$/../Desenvolvimento_Web/Class11_Resource_Controller/model/Series.php" />
@@ -108,13 +181,43 @@
         <option value="$PROJECT_DIR$/control/RequestController.php" />
         <option value="$PROJECT_DIR$/model/List.php" />
         <option value="$PROJECT_DIR$/model/Lista.php" />
-        <option value="$PROJECT_DIR$/model/Series.php" />
-        <option value="$PROJECT_DIR$/control/ResourceController.php" />
-        <option value="$PROJECT_DIR$/control/ControlManager.php" />
-        <option value="$PROJECT_DIR$/control/SeriesController.php" />
         <option value="$PROJECT_DIR$/control/UserController.php" />
-        <option value="$PROJECT_DIR$/control/EpisodeController.php" />
+        <option value="$PROJECT_DIR$/model/User.php" />
+        <option value="$PROJECT_DIR$/model/Episode.php" />
+        <option value="$PROJECT_DIR$/model/Series.php" />
+        <option value="$PROJECT_DIR$/model/Usuario.php" />
+        <option value="$PROJECT_DIR$/model/Temporada.php" />
+        <option value="$PROJECT_DIR$/model/Perfil_Usuario.php" />
         <option value="$PROJECT_DIR$/control/ListaController.php" />
+        <option value="$PROJECT_DIR$/model/status_episodio_usuario.php" />
+        <option value="$PROJECT_DIR$/model/perfil_usuario.php" />
+        <option value="$PROJECT_DIR$/control/Temporada.php" />
+        <option value="$PROJECT_DIR$/model/categoria.php" />
+        <option value="$PROJECT_DIR$/control/CategoriaController.php" />
+        <option value="$PROJECT_DIR$/control/EpisodeController.php" />
+        <option value="$PROJECT_DIR$/model/lista.php" />
+        <option value="$PROJECT_DIR$/model/part_especial.php" />
+        <option value="$PROJECT_DIR$/model/ator_temporada.php" />
+        <option value="$PROJECT_DIR$/control/ControlManager.php" />
+        <option value="$PROJECT_DIR$/model/usuario.php" />
+        <option value="$PROJECT_DIR$/model/temporada.php" />
+        <option value="$PROJECT_DIR$/control/TemporadaController.php" />
+        <option value="$PROJECT_DIR$/model/episodio.php" />
+        <option value="$PROJECT_DIR$/model/series.php" />
+        <option value="$PROJECT_DIR$/control/ResourceController.php" />
+        <option value="$PROJECT_DIR$/control/EpisodioController.php" />
+        <option value="$PROJECT_DIR$/model/ator.php" />
+        <option value="$PROJECT_DIR$/control/AtorController.php" />
+        <option value="$PROJECT_DIR$/control/AtorTemporadaController.php" />
+        <option value="$PROJECT_DIR$/model/diretor.php" />
+        <option value="$PROJECT_DIR$/control/SeriesController.php" />
+        <option value="$PROJECT_DIR$/control/DiretorController.php" />
+        <option value="$PROJECT_DIR$/control/PartEspecialController.php" />
+        <option value="$PROJECT_DIR$/control/PerfilUsuarioController.php" />
+        <option value="$PROJECT_DIR$/control/UsuarioController.php" />
+        <option value="$PROJECT_DIR$/control/StatusEpisodioUsuarioController.php" />
+        <option value="$PROJECT_DIR$/model/usuario_episodio.php" />
+        <option value="$PROJECT_DIR$/control/UsuarioEpisodioController.php" />
       </list>
     </option>
   </component>
@@ -158,7 +261,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -174,6 +276,20 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="ProjectSeries" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ProjectSeries" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ProjectSeries" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="util" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -222,12 +338,14 @@
         </subPane>
       </pane>
       <pane id="Scope" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Desenvolvimento_Web" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="SearchEverywhereHistoryKey" value="{&#9;FILE&#9;file://C:/xampp/htdocs/ProjectSeries/control/UsuarioController.php" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -315,7 +433,7 @@
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="true" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="7.320644E-4" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32913387" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout>
@@ -352,133 +470,39 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="3" />
+      <option name="time" value="5" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/control/RequestController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="29" column="37" selection-start-line="29" selection-start-column="37" selection-end-line="29" selection-end-column="37" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/model/Lista.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/control/ResourceController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="26" column="29" selection-start-line="26" selection-start-column="29" selection-end-line="26" selection-end-column="29" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/model/User.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/control/UserController.php">
+    <entry file="file://$PROJECT_DIR$/control/UsuarioController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <marker date="1463349004405" expanded="true" signature="746:1089" placeholder="INSERT INTO user... " />
-            <marker date="1463349004405" expanded="true" signature="1417:1491" placeholder="SELECT first... user" />
-            <marker date="1463349004405" expanded="true" signature="2065:2097" placeholder="DELETE FROM " />
+            <marker date="1463964846737" expanded="true" signature="756:1069" placeholder="INSERT INTO user... " />
+            <marker date="1463964846737" expanded="true" signature="1388:1557" placeholder="SELECT first... user" />
+            <marker date="1463964846737" expanded="true" signature="1388:1558" placeholder="SELECT u.fir... usuario" />
+            <marker date="1463964846737" expanded="true" signature="2299:2338" placeholder="UPDATE usuar... " />
+            <marker date="1463964846737" expanded="true" signature="2299:2353" placeholder="UPDATE usuar... " />
+            <marker date="1463964846737" expanded="true" signature="2299:2384" placeholder="UPDATE usuar... " />
+            <marker date="1463964846737" expanded="true" signature="2887:2922" placeholder="DELETE FROM " />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/control/ResourceController.php">
+    <entry file="file://$PROJECT_DIR$/control/SeriesController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="26" column="29" selection-start-line="26" selection-start-column="29" selection-end-line="26" selection-end-column="29" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/model/User.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/model/Lista.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/database/DBConnector.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/control/ListaController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="31" column="43" selection-start-line="31" selection-start-column="43" selection-end-line="31" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/control/ResourceController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="26" column="74" selection-start-line="26" selection-start-column="74" selection-end-line="26" selection-end-column="74" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/control/UserController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <caret line="21" column="72" selection-start-line="21" selection-start-column="72" selection-end-line="21" selection-end-column="72" />
           <folding>
-            <marker date="1463349004405" expanded="true" signature="746:1089" placeholder="INSERT INTO user... " />
-            <marker date="1463349004405" expanded="true" signature="1417:1491" placeholder="SELECT first... user" />
-            <marker date="1463349004405" expanded="true" signature="2065:2097" placeholder="DELETE FROM " />
+            <marker date="1463957477856" expanded="true" signature="428:448" placeholder="SELECT * FRO... series" />
+            <marker date="1463957477856" expanded="true" signature="428:455" placeholder="SELECT name_... series" />
+            <marker date="1463957477856" expanded="true" signature="428:463" placeholder="SELECT * FRO... series" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/control/RequestController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="29" column="37" selection-start-line="29" selection-start-column="37" selection-end-line="29" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/control/ControlManager.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="32" column="65" selection-start-line="32" selection-start-column="65" selection-end-line="32" selection-end-column="65" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/model/Lista.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/database/DBConnector.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -487,48 +511,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/control/ListaController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="31" column="43" selection-start-line="31" selection-start-column="43" selection-end-line="31" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/control/ResourceController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/model/Lista.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/database/DBConnector.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/control/ListaController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="31" column="43" selection-start-line="31" selection-start-column="43" selection-end-line="31" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/control/ResourceController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -602,23 +588,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/model/Episode.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/Downloads/arquivos AF/ceub/DW/CLASS CODES/Classes/Class14_Search/database/DatabaseConnector.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-0.34595525">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
@@ -644,121 +616,301 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/database/DBConnector.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-21.576923">
+          <caret line="36" column="27" selection-start-line="36" selection-start-column="27" selection-end-line="36" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/model/Request.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.2685026">
+        <state vertical-scroll-proportion="-7.0">
           <caret line="59" column="5" selection-start-line="59" selection-start-column="5" selection-end-line="59" selection-end-column="5" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/model/Lista.php">
+    <entry file="file://$PROJECT_DIR$/model/part_especial.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.35111877">
+          <caret line="12" column="36" selection-start-line="12" selection-start-column="36" selection-end-line="12" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/model/ator_temporada.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-6.5384617">
+          <caret line="10" column="120" selection-start-line="10" selection-start-column="52" selection-end-line="10" selection-end-column="120" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/control/RequestController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
+        <state vertical-scroll-proportion="-18.961538">
           <caret line="29" column="37" selection-start-line="29" selection-start-column="37" selection-end-line="29" selection-end-column="37" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/database/DBConnector.php">
+    <entry file="file://$PROJECT_DIR$/util/RequestRouter.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$USER_HOME$/Downloads/arquivos AF/ceub/DW/CLASS CODES/Classes/Class14_Search/control/UserController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="11" column="16" selection-start-line="11" selection-start-column="16" selection-end-line="11" selection-end-column="16" />
-          <folding>
-            <marker date="1462311610000" expanded="true" signature="635:899" placeholder="INSERT INTO user... " />
-            <marker date="1462311610000" expanded="true" signature="1189:1259" placeholder="SELECT first... user" />
-          </folding>
+        <state vertical-scroll-proportion="-17.0">
+          <caret line="51" column="36" selection-start-line="51" selection-start-column="36" selection-end-line="51" selection-end-column="36" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/control/EpisodeController.php">
+    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/php/lib/php.jar!/com/jetbrains/php/lang/psi/stubs/data/json.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.08777969">
-          <caret line="3" column="27" selection-start-line="3" selection-start-column="27" selection-end-line="3" selection-end-column="27" />
-          <folding>
-            <marker date="1463349691742" expanded="true" signature="605:736" placeholder="INSERT INTO series... " />
-            <marker date="1463349691742" expanded="true" signature="1064:1110" placeholder="SELECT serie... episode" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/model/User.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.34767643">
+          <caret line="88" column="9" selection-start-line="88" selection-start-column="9" selection-end-line="88" selection-end-column="9" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/model/Series.php">
+    <entry file="file://$PROJECT_DIR$/model/usuario.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.7796902">
-          <caret line="64" column="32" selection-start-line="64" selection-start-column="32" selection-end-line="64" selection-end-column="32" />
+        <state vertical-scroll-proportion="-14.384615">
+          <caret line="22" column="0" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/model/categoria.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.20481928">
+          <caret line="7" column="10" selection-start-line="7" selection-start-column="10" selection-end-line="7" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/model/temporada.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-28.76923">
+          <caret line="44" column="4" selection-start-line="44" selection-start-column="4" selection-end-line="44" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/control/CategoriaController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-3.0769231">
+          <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+          <folding>
+            <marker date="1463668054777" expanded="true" signature="433:475" placeholder="SELECT nme_c... categoria" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/model/status_episodio_usuario.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-4.576923">
+          <caret line="7" column="10" selection-start-line="7" selection-start-column="10" selection-end-line="7" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/model/series.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-45.115383">
+          <caret line="69" column="5" selection-start-line="69" selection-start-column="5" selection-end-line="69" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/control/AtorTemporadaController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-9.807693">
+          <caret line="15" column="51" selection-start-line="15" selection-start-column="51" selection-end-line="15" selection-end-column="51" />
+          <folding>
+            <marker date="1463956488120" expanded="true" signature="324:425" placeholder="SELECT cod_t... ator_temporada" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/control/ControlManager.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.5421687">
+          <caret line="41" column="75" selection-start-line="41" selection-start-column="75" selection-end-line="41" selection-end-column="75" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/model/ator.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.61445785">
+          <caret line="21" column="5" selection-start-line="21" selection-start-column="5" selection-end-line="21" selection-end-column="5" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/control/ResourceController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.9070568">
-          <caret line="31" column="74" selection-start-line="31" selection-start-column="68" selection-end-line="31" selection-end-column="74" />
+        <state vertical-scroll-proportion="-7.5384617">
+          <caret line="23" column="31" selection-start-line="23" selection-start-column="31" selection-end-line="23" selection-end-column="31" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/control/ControlManager.php">
+    <entry file="file://$PROJECT_DIR$/model/episodio.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.31325302">
-          <caret line="33" column="23" selection-start-line="33" selection-start-column="23" selection-end-line="33" selection-end-column="23" />
+        <state vertical-scroll-proportion="-8.5">
+          <caret line="13" column="142" selection-start-line="13" selection-start-column="32" selection-end-line="13" selection-end-column="142" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/control/ListaController.php">
+    <entry file="file://$PROJECT_DIR$/model/diretor.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-16.461538">
-          <caret line="70" column="51" selection-start-line="70" selection-start-column="51" selection-end-line="70" selection-end-column="51" />
+        <state vertical-scroll-proportion="-10.576923">
+          <caret line="21" column="5" selection-start-line="21" selection-start-column="5" selection-end-line="21" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/control/AtorController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-10.269231">
+          <caret line="19" column="50" selection-start-line="19" selection-start-column="50" selection-end-line="19" selection-end-column="50" />
           <folding>
-            <marker date="1463350350594" expanded="true" signature="657:951" placeholder="INSERT INTO lista... " />
-            <marker date="1463350350594" expanded="true" signature="1279:1342" placeholder="SELECT serie... lista" />
-            <marker date="1463350350594" expanded="true" signature="1915:1951" placeholder="DELETE FROM " />
+            <marker date="1463956457594" expanded="true" signature="422:454" placeholder="SELECT cod_s... ator" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/control/UserController.php">
+    <entry file="file://$PROJECT_DIR$/control/DiretorController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-33.76923">
-          <caret line="72" column="60" selection-start-line="72" selection-start-column="60" selection-end-line="72" selection-end-column="60" />
+        <state vertical-scroll-proportion="-10.269231">
+          <caret line="17" column="69" selection-start-line="17" selection-start-column="69" selection-end-line="17" selection-end-column="69" />
           <folding>
-            <marker date="1463349004405" expanded="true" signature="746:1089" placeholder="INSERT INTO user... " />
-            <marker date="1463349004405" expanded="true" signature="1417:1491" placeholder="SELECT first... user" />
-            <marker date="1463349004405" expanded="true" signature="2065:2097" placeholder="DELETE FROM " />
+            <marker date="1463957726675" expanded="true" signature="428:465" placeholder="SELECT cod_s... diretor" />
+            <marker date="1463957726675" expanded="true" signature="428:466" placeholder="SELECT nme_d... diretor" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/control/EpisodioController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-10.269231">
+          <caret line="22" column="23" selection-start-line="22" selection-start-column="23" selection-end-line="22" selection-end-column="23" />
+          <folding>
+            <marker date="1463953256525" expanded="true" signature="431:639" placeholder="SELECT serie... episode" />
+            <marker date="1463953256525" expanded="true" signature="431:742" placeholder="SELECT s.nam... episodio" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/control/PartEspecialController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-11.115385">
+          <caret line="17" column="51" selection-start-line="17" selection-start-column="51" selection-end-line="17" selection-end-column="51" />
+          <folding>
+            <marker date="1463964283776" expanded="true" signature="439:494" placeholder="SELECT cod_e... part_especial" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/model/perfil_usuario.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-4.576923">
+          <caret line="7" column="10" selection-start-line="7" selection-start-column="10" selection-end-line="7" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/control/PerfilUsuarioController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-15.153846">
+          <caret line="79" column="57" selection-start-line="79" selection-start-column="57" selection-end-line="79" selection-end-column="57" />
+          <folding>
+            <marker date="1463964743129" expanded="true" signature="625:715" placeholder="INSERT INTO perfil_usuario... " />
+            <marker date="1463964743129" expanded="true" signature="1034:1078" placeholder="SELECT nme_p... perfil_usuario" />
+            <marker date="1463964743129" expanded="true" signature="1813:1919" placeholder="UPDATE perfi... " />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/control/SeriesController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.26333907">
-          <caret line="9" column="5" selection-start-line="9" selection-start-column="5" selection-end-line="9" selection-end-column="5" />
+        <state vertical-scroll-proportion="-12.423077">
+          <caret line="19" column="76" selection-start-line="19" selection-start-column="76" selection-end-line="19" selection-end-column="76" />
           <folding>
-            <marker date="1463347795324" expanded="true" signature="705:998" placeholder="INSERT INTO user... " />
-            <marker date="1463347795324" expanded="true" signature="1326:1406" placeholder="SELECT name_... series" />
+            <marker date="1463957477856" expanded="true" signature="428:448" placeholder="SELECT * FRO... series" />
+            <marker date="1463957477856" expanded="true" signature="428:455" placeholder="SELECT name_... series" />
+            <marker date="1463957477856" expanded="true" signature="428:463" placeholder="SELECT * FRO... series" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/control/StatusEpisodioUsuarioController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-15.153846">
+          <caret line="59" column="57" selection-start-line="59" selection-start-column="57" selection-end-line="59" selection-end-column="57" />
+          <folding>
+            <marker date="1463964879449" expanded="true" signature="459:512" placeholder="SELECT nme_s... status_episodio_usuario" />
+            <marker date="1463964879449" expanded="true" signature="1244:1389" placeholder="UPDATE statu... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/control/TemporadaController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-13.730769">
+          <caret line="21" column="59" selection-start-line="21" selection-start-column="59" selection-end-line="21" selection-end-column="59" />
+          <folding>
+            <marker date="1463950766200" expanded="true" signature="433:568" placeholder="SELECT s.nam... temporada" />
+            <marker date="1463950766200" expanded="true" signature="433:573" placeholder="SELECT s.nam... temporada" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/control/UsuarioController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-18.423077">
+          <caret line="94" column="5" selection-start-line="94" selection-start-column="5" selection-end-line="94" selection-end-column="5" />
+          <folding>
+            <marker date="1463964846737" expanded="true" signature="756:1069" placeholder="INSERT INTO user... " />
+            <marker date="1463964846737" expanded="true" signature="1388:1557" placeholder="SELECT first... user" />
+            <marker date="1463964846737" expanded="true" signature="1388:1558" placeholder="SELECT u.fir... usuario" />
+            <marker date="1463964846737" expanded="true" signature="2299:2338" placeholder="UPDATE usuar... " />
+            <marker date="1463964846737" expanded="true" signature="2299:2353" placeholder="UPDATE usuar... " />
+            <marker date="1463964846737" expanded="true" signature="2299:2384" placeholder="UPDATE usuar... " />
+            <marker date="1463964846737" expanded="true" signature="2887:2922" placeholder="DELETE FROM " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/model/usuario_episodio.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-9.153846">
+          <caret line="72" column="0" selection-start-line="72" selection-start-column="0" selection-end-line="72" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/control/UsuarioEpisodioController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="1.2702237">
+          <caret line="51" column="8" selection-start-line="51" selection-start-column="8" selection-end-line="51" selection-end-column="8" />
+          <folding>
+            <marker date="1463970598814" expanded="true" signature="831:1240" placeholder="INSERT INTO usuario_episodio... " />
+            <marker date="1463970598814" expanded="true" signature="1559:1677" placeholder="SELECT cod_e... usuario_episodio" />
+            <marker date="1463970598814" expanded="true" signature="2409:2521" placeholder="UPDATE usuar... " />
+            <marker date="1463970598814" expanded="true" signature="3024:3083" placeholder="DELETE FROM " />
           </folding>
         </state>
       </provider>

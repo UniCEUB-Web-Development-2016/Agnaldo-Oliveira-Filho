@@ -1,10 +1,18 @@
 <?php
 
 include_once "model/Request.php";
-include_once "control/UserController.php";
+include_once "control/UsuarioController.php";
 include_once "control/SeriesController.php";
-include_once "control/EpisodeController.php";
-include_once "control/ListaController.php";
+include_once "control/EpisodioController.php";
+include_once "control/StatusEpisodioUsuarioController.php";
+include_once "control/AtorController.php";
+include_once "control/CategoriaController.php";
+include_once "control/DiretorController.php";
+include_once "control/PerfilUsuarioController.php";
+include_once "control/TemporadaController.php";
+include_once "control/UsuarioEpisodioController.php";
+include_once "control/AtorTemporadaController.php";
+include_once "control/PartEspecialController.php";
 
 class ResourceController
 {
@@ -12,9 +20,17 @@ class ResourceController
 	private $controlMap = 
 	[
 		"series" => "SeriesController",
-		"user" => "UserController",
-		"episode" => "EpisodeController",
-		"lista" => "ListaController",
+		"usuario" => "UsuarioController",
+		"episodio" => "EpisodioController",
+		"status_episodio_usuario" => "StatusEpisodioUsuarioController",
+		"ator" => "AtorController",
+		"categoria" => "CategoriaController",
+		"diretor" => "DiretorController",
+		"perfil_usuario" => "PerfilUsuarioController",
+		"temporada" => "TemporadaController",
+		"usuario_episodio" => "UsuarioEpisodioController",
+		"ator_temporada" => "AtorTemporadaController",
+		"part_especial" => "PartEspecialController",
 	];
 
 	public function createResource($request)
@@ -25,6 +41,11 @@ class ResourceController
 	public function searchResource($request)
 	{
 		return (new $this->controlMap[$request->get_resource()]())->search($request);
+	}
+
+	public function updateResource($request)
+	{
+		return (new $this->controlMap[$request->get_resource()]())->update($request);
 	}
 
 	public function removeResource($request)

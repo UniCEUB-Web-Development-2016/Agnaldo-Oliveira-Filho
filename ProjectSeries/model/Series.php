@@ -1,20 +1,42 @@
 <?php
 
-class Series
+class series
 {
+    private $idt_serie;
+    private $cod_categoria;
     private $name_series;
     private $initials;
-    private $category;
     private $year_series;
-    private $director;
+    private $resumo;
 
-    public function __construct($name_series,$initials, $category, $year_series, $director)
+    public function __construct($idt_serie, $cod_categoria,$name_series, $initials, $year_series, $resumo)
     {
+        $this->idt_serie = $idt_serie;
+        $this->cod_categoria = $cod_categoria;
         $this->name_series = $name_series;
         $this->initials = $initials;
-        $this->category = $category;
         $this->year_series = $year_series;
-        $this->director = $director;
+        $this->resumo = $resumo;
+    }
+
+    public function getIdtSerie()
+    {
+        return $this->idt_serie;
+    }
+
+    public function setIdtSerie($idt_serie)
+    {
+        $this->idt_serie = $idt_serie;
+    }
+
+    public function getCodCategoria()
+    {
+        return $this->cod_categoria;
+    }
+
+    public function setCodCategoria($cod_categoria)
+    {
+        $this->cod_categoria = $cod_categoria;
     }
 
     public function setNameSeries($name_series)
@@ -37,16 +59,6 @@ class Series
         $this->initials = $initials;
     }
 
-    public function setCategory($category)
-    {
-        $this->category = $category;
-    }
-
-    public function getCategory()
-    {
-        return $this->category;
-    }
-
     public function setYearSeries($year_series)
     {
         $this->year_series = $year_series;
@@ -54,16 +66,18 @@ class Series
 
     public function getYearSeries()
     {
-       return $this->year_series;
+        return $this->year_series;
     }
 
-    public function setDirector($director)
+    public function setResumo($resumo)
     {
-        $this->director = $director;
+        $this->resumo = $resumo;
     }
 
-    public function getDirector()
+    public function getResumo()
     {
-        return $this->director;
+        return $this->resumo;
     }
 }
+
+
