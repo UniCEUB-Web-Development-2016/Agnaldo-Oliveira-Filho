@@ -47,10 +47,9 @@ class UsuarioController
 
         $conn = $db->getConnection();
 
-        $result = $conn->query("SELECT u.first_name, u.last_name, u.email, u.birthDate, p.nme_perfil FROM
-        usuario AS u, perfil_usuario AS p WHERE 1=1 AND p.idt_perfil_usuario = u.cod_perfil AND ".$crit);
+        $result = $conn->query("SELECT * FROM usuario WHERE 1=1 AND ".$crit);
 
-        return print_r($result->fetchAll(PDO::FETCH_ASSOC));
+        return $result->fetchAll(PDO::FETCH_ASSOC);
 
     }
 
@@ -59,7 +58,7 @@ class UsuarioController
         $criteria = "";
         foreach($params as $key => $value)
         {
-            $criteria = $criteria.$key." LIKE '%".$value."%' OR ";
+            $criteria = $criteria.$key." = '".$value."' AND ";
         }
 
         return substr($criteria, 0, -4);

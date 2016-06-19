@@ -3,6 +3,7 @@
 include_once "model/Request.php";
 include_once "model/status_episodio_usuario.php";
 include_once "database/DBConnector.php";
+include_once "ControlConfig.php";
 
 class StatusEpisodioUsuarioController
 {

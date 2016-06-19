@@ -1,10 +1,10 @@
 <?php
 
 include_once "model/Request.php";
-include_once "model/temporada.php";
+include_once "model/series_categoria.php";
 include_once "database/DBConnector.php";
 
-class TemporadaController
+class SeriesCategoriaController
 {
 
     public function search($request)
@@ -16,7 +16,8 @@ class TemporadaController
 
         $conn = $db->getConnection();
 
-        $result = $conn->query("SELECT * FROM temporada WHERE " . $crit);
+        $result = $conn->query("SELECT s.name_series, c.nme_categoria FROM series_categoria AS sc, series AS s, categoria AS c
+          WHERE sc.cod_serie = s.idt_serie AND sc.cod_categoria = c.idt_categoria AND " . $crit);
 
         return $result->fetchAll(PDO::FETCH_ASSOC);
 

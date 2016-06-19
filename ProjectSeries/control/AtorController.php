@@ -15,7 +15,8 @@ class AtorController
 
         $conn = $db->getConnection();
 
-        $result = $conn->query("SELECT nme_ator FROM ator WHERE ".$crit);
+        $result = $conn->query("SELECT a.nme_ator, s.name_series FROM ator AS a, ator_temporada AS atemp, series AS s, temporada AS t WHERE
+        atemp.cod_ator = a.idt_ator AND atemp.cod_temporada = t.idt_temporada AND t.cod_serie = s.idt_serie AND ".$crit);
 
         return $result->fetchAll(PDO::FETCH_ASSOC);
 

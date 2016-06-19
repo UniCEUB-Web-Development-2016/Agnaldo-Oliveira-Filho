@@ -32,8 +32,7 @@ class UsuarioEpisodioController
         ('".$user_episode->getCodEpisodio()."','".
             $user_episode->getCodUsuario()."','".
             $user_episode->getCodStatus()."','".
-            $user_episode->getAvaliacao()."','".
-            $user_episode->getDtaAtualizacao()."','".
+            $user_episode->getAvaliacao()."',NOW(),'".
             $user_episode->getComment()."')";
 
         return $query;

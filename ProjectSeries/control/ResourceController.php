@@ -6,8 +6,8 @@ include_once "control/SeriesController.php";
 include_once "control/EpisodioController.php";
 include_once "control/StatusEpisodioUsuarioController.php";
 include_once "control/AtorController.php";
-include_once "control/CategoriaController.php";
-include_once "control/DiretorController.php";
+include_once "control/SeriesCategoriaController.php";
+include_once "control/EscritorController.php";
 include_once "control/PerfilUsuarioController.php";
 include_once "control/TemporadaController.php";
 include_once "control/UsuarioEpisodioController.php";
@@ -24,8 +24,8 @@ class ResourceController
 		"episodio" => "EpisodioController",
 		"status_episodio_usuario" => "StatusEpisodioUsuarioController",
 		"ator" => "AtorController",
-		"categoria" => "CategoriaController",
-		"diretor" => "DiretorController",
+		"series_categoria" => "SeriesCategoriaController",
+		"escritor" => "EscritorController",
 		"perfil_usuario" => "PerfilUsuarioController",
 		"temporada" => "TemporadaController",
 		"usuario_episodio" => "UsuarioEpisodioController",

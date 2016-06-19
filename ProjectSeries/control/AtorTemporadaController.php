@@ -11,7 +11,9 @@ class AtorTemporadaController
 
         $conn = $db->getConnection();
 
-        $result = $conn->query("SELECT cod_temporada, cod_ator, primeira_participacao, ultima_participacao FROM ator_temporada WHERE ".$crit);
+        $result = $conn->query("SELECT s.name_series, t.num_temporada, a.nme_ator FROM ator_temporada AS atemp, series AS s, temporada AS t,
+ator AS a WHERE atemp.cod_ator = a.idt_ator AND atemp.cod_temporada = t.idt_temporada AND
+ t.cod_serie = s.idt_serie AND ".$crit);
 
         return $result->fetchAll(PDO::FETCH_ASSOC);
     }

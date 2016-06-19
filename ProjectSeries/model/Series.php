@@ -7,16 +7,20 @@ class series
     private $name_series;
     private $initials;
     private $year_series;
-    private $resumo;
+    private $synopsis;
+    private $link_trailer;
+    private $img_poster;
 
-    public function __construct($idt_serie, $cod_categoria,$name_series, $initials, $year_series, $resumo)
+    public function __construct($idt_serie, $cod_categoria,$name_series, $initials, $year_series, $synopsis, $link_trailer, $img_poster)
     {
         $this->idt_serie = $idt_serie;
         $this->cod_categoria = $cod_categoria;
         $this->name_series = $name_series;
         $this->initials = $initials;
         $this->year_series = $year_series;
-        $this->resumo = $resumo;
+        $this->synopsis = $synopsis;
+        $this->link_trailer = $link_trailer;
+        $this->img_poster = $img_poster;
     }
 
     public function getIdtSerie()
@@ -69,15 +73,36 @@ class series
         return $this->year_series;
     }
 
-    public function setResumo($resumo)
+    public function setSynopsis($synopsis)
     {
-        $this->resumo = $resumo;
+        $this->synopsis = $synopsis;
     }
 
-    public function getResumo()
+    public function getSynopsis()
     {
-        return $this->resumo;
+        return $this->synopsis;
     }
+
+    public function getLinkTrailer()
+    {
+        return $this->link_trailer;
+    }
+
+    public function setLinkTrailer($link_trailer)
+    {
+        $this->link_trailer = $link_trailer;
+    }
+
+    public function getImgPoster()
+    {
+        return $this->img_poster;
+    }
+
+    public function setImgPoster($img_poster)
+    {
+        $this->img_poster = $img_poster;
+    }
+
 }
 
 

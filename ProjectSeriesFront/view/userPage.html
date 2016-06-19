@@ -1,0 +1,162 @@
+ <script scr="lib/angular.min.js"></script>
+ <script scr="js/Controller/userCtrl.js"></script>
+ <style>    
+    /* Set black background color, white text and some padding */
+    footer {
+      background-color: #555;
+      color: white;
+      padding: 15px;
+    }
+  </style>
+</head>
+<body ng-controller="userCtrl">
+  
+<div class="container text-center">    
+  <div class="row">
+    <div class="col-sm-3 well">
+      <div class="well">
+        <p><a ng-repeat="user in usuario">{{user.first_name}}</a></p>
+        <img src="img/4897645-batman.jpg" class="img-circle" height="105" width="105" alt="Avatar">
+      </div>
+	  <div class="well">
+	  <h3>Total de Episódios assistidos:</h3>
+	  <h2>127</h2>
+	  </div>
+      <p><a href="#">Link</a></p>
+      <p><a href="#">Link</a></p>
+      <p><a href="#">Link</a></p>
+    </div>
+    <div class="col-sm-7">
+    
+      <div class="row">
+        <div class="col-sm-3">
+          <div class="panel panel-default text-left">
+            <div class="panel-body">
+              <strong><p contenteditable="true">Já assistiu: 10</p></strong> 
+            </div>
+          </div>
+        </div>
+		<div class="col-sm-3">
+          <div class="panel panel-default text-left">
+            <div class="panel-body">
+              <strong><p contenteditable="true">Assistindo: 3</p></strong>
+            </div>
+          </div>
+        </div>
+		<div class="col-sm-3">
+          <div class="panel panel-default text-left">
+            <div class="panel-body">
+              <strong><p contenteditable="true">Quer Assistir: 15</p></strong>
+            </div>
+          </div>
+        </div>
+		<div class="col-sm-3">
+          <div class="panel panel-default text-left">
+            <div class="panel-body">
+              <strong><p contenteditable="true">Desisitu: 5</p></strong>
+            </div>
+          </div>
+        </div>
+		
+      </div>
+	  <div class="row">
+        <div class="col-sm-12">
+          <div class="panel panel-default text-left">
+            <div class="panel-body">
+              <h2><p contenteditable="true">Próximos episódios para assistir:</p></h2>
+              <p><a href="gotPage">Game of thrones</a> >> Temporada 6 Episódio 8</p>
+			  <p><a href="#">Vikings</a> >> Temporada 4 Episódio 1</p>
+			  <p><a href="#">Preacher</a> >> Temporada 1 Episódio 2</p>
+			  
+<div ng-app="myApp" ng-controller="DiretorController"> 
+
+<ul>
+  <li ng-repeat="x in myData">
+    {{x.nme_diretor}}
+  </li>
+</ul>
+
+</div>
+
+<script>
+var app = angular.module('myApp', []);
+app.controller('DiretorController', function($scope, $http) {
+  $http.get("http://localhost/ProjectSeries/diretor/?nme_diretor=jeremy").then(function (response) {
+      $scope.myData = response.data.records;
+  });
+});
+</script>
+            </div>
+          </div>
+        </div>
+      </div>
+	  <div class="col-sm-12">
+	  <h3>Caixa de Mensagens</h3>
+      <form role="form">
+		<div class="form-group">
+      <label for="comment">Deixe um comentário:</label>
+      <textarea class="form-control" rows="5" id="comment"></textarea>
+    </div>
+	</form>
+	</div>
+      <div class="row">
+        <div class="col-sm-3">
+          <div class="well">
+           <p>John</p>
+           <img src="bird.jpg" class="img-circle" height="55" width="55" alt="Avatar">
+          </div>
+        </div>
+        <div class="col-sm-9">
+          <div class="well">
+            <p>Just Forgot that I had to mention something about someone to someone about how I forgot something, but now I forgot it. Ahh, forget it! Or wait. I remember.... no I don't.</p>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-3">
+          <div class="well">
+           <p>Bo</p>
+           <img src="bandmember.jpg" class="img-circle" height="55" width="55" alt="Avatar">
+          </div>
+        </div>
+        <div class="col-sm-9">
+          <div class="well">
+            <p>Just Forgot that I had to mention something about someone to someone about how I forgot something, but now I forgot it. Ahh, forget it! Or wait. I remember.... no I don't.</p>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-3">
+          <div class="well">
+           <p>Jane</p>
+           <img src="bandmember.jpg" class="img-circle" height="55" width="55" alt="Avatar">
+          </div>
+        </div>
+        <div class="col-sm-9">
+          <div class="well">
+            <p>Just Forgot that I had to mention something about someone to someone about how I forgot something, but now I forgot it. Ahh, forget it! Or wait. I remember.... no I don't.</p>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-3">
+          <div class="well">
+           <p>Anja</p>
+           <img src="bird.jpg" class="img-circle" height="55" width="55" alt="Avatar">
+          </div>
+        </div>
+        <div class="col-sm-9">
+          <div class="well">
+            <p>Just Forgot that I had to mention something about someone to someone about how I forgot something, but now I forgot it. Ahh, forget it! Or wait. I remember.... no I don't.</p>
+          </div>
+        </div>
+      </div>     
+    </div>
+  </div>
+</div>
+
+<footer class="container-fluid text-center">
+  <p>Footer Text</p>
+</footer>
+
+</body>

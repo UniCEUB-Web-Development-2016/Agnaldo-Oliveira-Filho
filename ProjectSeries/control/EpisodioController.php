@@ -9,18 +9,17 @@ class EpisodioController
 
     public function search($request)
     {
-        $params = $request->get_params();
+	$params = $request->get_params();
         $crit = $this->generateCriteria($params);
 
         $db = new DBConnector("localhost", "mydb", "mysql", "", "root", "");
 
         $conn = $db->getConnection();
 
-        $result = $conn->query("SELECT s.name_series, t.num_temporada, e.nme_episodio, e.duracao, e.dta_lancamento,
-        d.nme_diretor, e.sinopse, e.link_trailer FROM episodio AS e, series AS s, temporada AS t, diretor AS d
-        WHERE s.idt_serie = t.cod_serie AND t.idt_temporada = e.cod_temporada AND d.idt_diretor = e.cod_diretor AND ".$crit);
+        $result = $conn->query("SELECT s.name_series, t.num_temporada, e.num_episodio FROM episodio AS e, series AS s, temporada AS t WHERE s.idt_serie = t.cod_serie AND t.idt_temporada = e.cod_temporada AND ".$crit);
+		 // $result = $conn->query("SELECT * FROM episodio WHERE 1=1 and ".$crit);]
 
-        return print_r($result->fetchAll(PDO::FETCH_ASSOC));
+        return $result->fetchAll(PDO::FETCH_ASSOC);
 
     }
 
@@ -30,6 +29,35 @@ class EpisodioController
         foreach($params as $key => $value)
         {
             $criteria = $criteria.$key." LIKE '%".$value."%' OR ";
+        }
+
+        return substr($criteria, 0, -4);
+    }
+
+        public function update($request)
+    {
+        $params = $request->get_params();
+
+        $db = new DBConnector("localhost", "mydb", "mysql", "", "root", "");
+
+        $conn = $db->getConnection();
+
+        return $conn->query($this->generateUpdateQuery($params));
+    }
+
+    private function generateUpdateQuery($params)
+    {
+        $crit = $this->generateUpdateCriteria($params);
+
+        return "UPDATE episodio SET " . $crit . " WHERE idt_episodio = '" . $params["idt_episodio"] . "'";
+    }
+
+    private function generateUpdateCriteria($params)
+    {
+        $criteria = "";
+        foreach ($params as $key => $value)
+        {
+            $criteria = $criteria.$key." = '".$value."' ,";
         }
 
         return substr($criteria, 0, -4);

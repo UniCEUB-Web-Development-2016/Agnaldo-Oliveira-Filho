@@ -7,35 +7,28 @@ class RequestController
 
 	public function createRequest($protocol, $method, $uri, $server_addr)
 	{
-		$uri_array = explode("/", $uri);
 
-		return new Request(
-			    $protocol,
-				$method,
-				$uri_array[2],
-				$this->getParams($uri_array[3]),
-				$server_addr);
-		
-	}	
-
-
-	public function getParams($string_params)
-	{
-		$replace = str_replace ("?" , "" , $string_params);
-		$params = explode("&", $replace);
-		$params_map = array();
-
-		foreach ($params as $value) {
-			$explodeValue = explode("=", $value);
-			$params_map[$explodeValue[0]] = $explodeValue[1];
+		$uri_separated = parse_url($uri);
+		if(isset($uri_separated['query'])){
+			parse_str($uri_separated['query'], $params);
+		}else{
+			parse_str(1, $params);
 		}
 
-		return $params_map;	
+		return new Request(
+			$protocol,
+			$method,
+			$this->getResource($uri_separated['path']),
+			$params,
+			$server_addr);
+
 	}
 
 
-
-
-
+	public function getResource($resource)
+	{
+		$resource_array = explode("/", $resource);
+		return $resource_array[2];
+	}
 
 }
