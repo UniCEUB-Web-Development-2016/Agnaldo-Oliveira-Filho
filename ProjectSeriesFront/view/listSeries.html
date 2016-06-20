@@ -28,7 +28,9 @@
       </div>
     </div>
       <div class="list-group" ng-controller="listSeriesCtrl">
-			<a ng-repeat="serie in listSeries | filter:test" class="list-group-item">{{serie.name_series}}</a>
+        <div ng-repeat="serie in listSeries | filter:test">
+			<a href="#/series/{{serie.idt_serie}}" class="list-group-item">{{serie.name_series}}</a>
+        </div>
 	  </div>
     </div>
 </div>

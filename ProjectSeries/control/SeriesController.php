@@ -27,7 +27,7 @@ class SeriesController
         $result1->execute();*/
 
 
-        $result1 = $conn->prepare("SELECT name_series, initials, year_series, synopsis, link_trailer, img_poster FROM series WHERE ".$crit);
+        $result1 = $conn->prepare("SELECT * FROM series WHERE ".$crit);
         $result1->execute();
 
         return $result1->fetchAll(PDO::FETCH_ASSOC);

@@ -1,7 +1,7 @@
-angular.module("ProjectSeries").controller("listSeriesCtrl", function ($scope, $http) 
+angular.module("ProjectSeries").controller("listSeriesCtrl", function ($scope, $http, listSeriesAPI) 
 {
 		var carregarListSeries = function() {
-			$http.get("http://localhost/ProjectSeries/series/?").success(function (data) {
+			listSeriesAPI.getSeries().success(function (data) {
 				$scope.listSeries = data;
 			});
 		};

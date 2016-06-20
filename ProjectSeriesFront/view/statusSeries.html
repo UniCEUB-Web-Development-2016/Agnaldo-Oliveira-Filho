@@ -19,12 +19,9 @@
 					<h3 ng-repeat="serie in series">{{serie.name_series}}</h3>
 				</div>
 				<p>(2011-presente)</p>
-				<select class="form-control" ng-model="status.st" ng-options="st.nme_status for st in status">
-					<option value="">Selecione seu Status</option>
-				</select>
 				</div>
 			<div class="col-sm-8 text-left">
-				<div ng-controller="statusSeriesCtrl" class="jumbotron">
+				<div class="jumbotron">
 				<center><h2>Marque seus episódios assistidos</h2><center>
 				<hr>
 				<table class="table">
@@ -32,7 +29,7 @@
 						<th></th>
 						<th>Temporadas</th>
 						<th>Episódios</th>
-						<tr ng-class="{selecionado: ep.selecionado}" ng-repeat="ep in episodios">
+						<tr ng-class="{selecionado: ep.selecionado}" ng-repeat="ep in epSerie">
 							<td><input type="checkbox" ng-model="ep.selecionado"/></td>
 							<td>{{ep.num_temporada}}</td>
 							<td>{{ep.num_episodio}}</td>

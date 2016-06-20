@@ -1,9 +1,4 @@
-angular.module("ProjectSeries").controller("statusSeriesCtrl", function ($scope, $http) 
+angular.module("ProjectSeries").controller("statusSeriesCtrl", function ($scope, $http, $routeParams, seriesEp) 
 {
-		var carregarEpisodios = function() {
-			$http.get("http://localhost/ProjectSeries/episodio/?cod_serie=1").success(function (data) {
-				$scope.episodios = data;
-			});
-		};
-		carregarEpisodios();
+		$scope.seriesEp = seriesEp.data;
 });

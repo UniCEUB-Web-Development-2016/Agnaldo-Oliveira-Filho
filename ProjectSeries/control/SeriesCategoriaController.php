@@ -16,8 +16,7 @@ class SeriesCategoriaController
 
         $conn = $db->getConnection();
 
-        $result = $conn->query("SELECT s.name_series, c.nme_categoria FROM series_categoria AS sc, series AS s, categoria AS c
-          WHERE sc.cod_serie = s.idt_serie AND sc.cod_categoria = c.idt_categoria AND " . $crit);
+        $result = $conn->query("SELECT DISTINCT s.img_poster FROM series_categoria AS sc, series AS s, categoria AS c WHERE sc.cod_serie = s.idt_serie AND sc.cod_categoria = c.idt_categoria AND " . $crit);
 
         return $result->fetchAll(PDO::FETCH_ASSOC);
 

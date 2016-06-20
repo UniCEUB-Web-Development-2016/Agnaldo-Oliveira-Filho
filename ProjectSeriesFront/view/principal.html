@@ -1,145 +1,37 @@
-<header id="myCarousel" class="carousel slide">
-    <!-- Indicators -->
-    <ol class="carousel-indicators">
-        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-        <li data-target="#myCarousel" data-slide-to="1"></li>
-    </ol>
-
-    <!-- Wrapper for slides -->
-    <div class="carousel-inner">
-        <div class="item active">
-            <div class="fill" style="background-image:url('http://placehold.it/1900x1080&text=Se Organize!');"></div>
-            <div class="carousel-caption">
-                <h2>Não se perca na hora que for assistir suas séries favoritas!</h2>
-            </div>
-        </div>
-        <div class="item">
-            <div class="fill" style="background-image:url('http://placehold.it/1900x1080&text=Descubra!');"></div>
-            <div class="carousel-caption">
-                <h2>Conheça novas séries para assistir!</h2>
-            </div>
-        </div>
-    </div>
-
-    <!-- Controls -->
-    <a class="left carousel-control" href="#myCarousel" data-slide="prev">
-        <span class="icon-prev"></span>
-    </a>
-    <a class="right carousel-control" href="#myCarousel" data-slide="next">
-        <span class="icon-next"></span>
-    </a>
-</header>
-
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="lib/angular.min.js"></script>
+    <script src="js/principalCtrl.js"></script>
+    <script src="lib/jquery.min.js"></script>
+    <style>
+    .posterStyle{
+        width: 1200px;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    </style>
 <div class="container">
 
     <div class="container text-center">
-        <h1>Uma nova experiência para os fãs de séries</h1>
-        <p>ProjectSeries é destinado aos fãs de séries que querem aproveitar ao máximo todas séries possíveis sem se preocupar em lembrar onde parou de assistir.
-            Tendo em vista atender esse problema, ProjectSeries mantém o registro de tudo que você assiste e determina onde você parou e qual próximo episódio
-            pra você assistir da sua série.</p>
+        <h1>A new experience for series fans</h1>
+        <p>ProjectSeries it's intended for series fans who want to make the most of all possible series without worrying about remembering where you stopped watching.
+        To meet this problem, ProjectSeries keeps track of everything you watch and determines what the next episode for you to watch your series.</p>
     </div>
     <hr>
 </div>
 <!-- Example row of columns -->
 <div class="container text-center">
-    <h1>Mais populares:</h1>
+    <h2>More popular:</h2>
 </div>
 <div id="homeseries" class="row">
 
-    <div class="col-md-2">
-        <div>
-            <a href="gotPage.html"><img ng-repeat="x in myData" src="img/{{x.img_poster}}" height="300" width="200" alt="posterserie"></a>
-        </div>
-        <div id="block1" class="dropdown">
-            <button class="btn btn-default dropdown-toggle" type="button" id="menu1" data-toggle="dropdown">Selecione seu status
-                <span class="caret"></span></button>
-            <ul class="dropdown-menu" role="menu" aria-labelledby="menu1">
-                <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Já Assisti</a></li>
-                <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Estou Assistindo</a></li>
-                <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Desejo Assistir</a></li>
-                <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Abandonei</a></li>
-            </ul>
-        </div>
-    </div>
-    <div class="col-md-2">
-        <div >
-            <a href="vikingsPage.html"><img ng-repeat="x in myData" src="img/{{x.img_poster}}" height="300" width="200" alt="posterserie"></a>
-        </div>
-        <div id="block1" class="dropdown">
-            <button class="btn btn-default dropdown-toggle" type="button" id="menu1" data-toggle="dropdown">Selecione seu status
-                <span class="caret"></span></button>
-            <ul class="dropdown-menu" role="menu" aria-labelledby="menu1">
-                <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Já Assisti</a></li>
-                <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Estou Assistindo</a></li>
-                <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Desejo Assistir</a></li>
-                <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Abandonei</a></li>
-            </ul>
-        </div>
-    </div>
-    <div class="col-md-2">
-        <div ng-controller="twdSeriesCtrl">
-            <a href="twdPage.php"><img ng-repeat="x in myData" src="img/{{x.img_poster}}" height="300" width="200" alt="posterserie"></a>
-        </div>
-        <div id="block1" class="dropdown">
-            <button class="btn btn-default dropdown-toggle" type="button" id="menu1" data-toggle="dropdown">Selecione seu status
-                <span class="caret"></span></button>
-            <ul class="dropdown-menu" role="menu" aria-labelledby="menu1">
-                <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Já Assisti</a></li>
-                <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Estou Assistindo</a></li>
-                <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Desejo Assistir</a></li>
-                <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Abandonei</a></li>
-            </ul>
-        </div>
+        <div class="posterStyle" ng-controller="principalCtrl">
+            <p><img ng-repeat="cat in categoria" src="img/{{cat.img_poster}}" height="300" width="200" alt="posterserie"></p>
+      
     </div>
 </div>
-<hr>
-<div class="container text-center">
-    <h1>Adicionadas Recentemente:</h1>
-</div>
-<div id="homeseries" class="row">
-    <div class="col-md-4">
-        <p><img src="img/o-preacher-serie.jpg" height="200" width="350" alt="posterserie"></p>
-        <div id="block1"><p><a class="btn btn-default" href="#" role="button">Ver Detalhes &raquo;</a></p></div>
-        <div id="block2" class="dropdown">
-            <button class="btn btn-default dropdown-toggle" type="button" id="menu1" data-toggle="dropdown">Selecione seu status
-                <span class="caret"></span></button>
-            <ul class="dropdown-menu" role="menu" aria-labelledby="menu1">
-                <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Já Assisti</a></li>
-                <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Estou Assistindo</a></li>
-                <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Desejo Assistir</a></li>
-                <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Abandonei</a></li>
-            </ul>
-        </div>
-    </div>
-    <div class="col-md-4">
-        <p><img src="img/outcast.jpg" height="200" width="350" alt="posterserie"></p>
-        <div id="block1"><p><a class="btn btn-default" href="#" role="button">Ver Detalhes &raquo;</a></p></div>
-        <div id="block2" class="dropdown">
-            <button class="btn btn-default dropdown-toggle" type="button" id="menu1" data-toggle="dropdown">Selecione seu status
-                <span class="caret"></span></button>
-            <ul class="dropdown-menu" role="menu" aria-labelledby="menu1">
-                <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Já Assisti</a></li>
-                <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Estou Assistindo</a></li>
-                <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Desejo Assistir</a></li>
-                <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Abandonei</a></li>
-            </ul>
-        </div>
-    </div>
-    <div class="col-md-4">
-        <p><img src="img/ash-vs-evil-dead-key-art-700.jpg" height="200" width="350" alt="posterserie"></p>
-        <div id="block1"><p><a class="btn btn-default" href="#" role="button">Ver Detalhes &raquo;</a></p></div>
-        <div id="block2" class="dropdown">
-            <button class="btn btn-default dropdown-toggle" type="button" id="menu1" data-toggle="dropdown">Selecione seu status
-                <span class="caret"></span></button>
-            <ul class="dropdown-menu" role="menu" aria-labelledby="menu1">
-                <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Já Assisti</a></li>
-                <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Estou Assistindo</a></li>
-                <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Desejo Assistir</a></li>
-                <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Abandonei</a></li>
-            </ul>
-        </div>
-    </div>
-    <hr>
     <footer>
         <p>&copy; 2015 Company, Inc.</p>
     </footer>

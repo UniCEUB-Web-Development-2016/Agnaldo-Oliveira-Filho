@@ -1,0 +1,44 @@
+   <script src="lib/angular.min.js"></script>
+    <script src="js/signUpPageCtrl.js"></script>
+    <script src="lib/jquery.min.js"></script>
+    <style>
+        .jumbotron{
+            width: 800px;
+            text-align: center;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    </style>
+        <div class="jumbotron">
+            <form name="usuarioForm" class="form-signin">
+                <h2 class="form-signin-heading">Sign Up:</h2>
+
+                    <input type="text" name="first_name" ng-model="usuario.first_name" class="form-control" placeholder="Nome" ng-required="true"/>
+                    <br>
+                    <input type="text" name="last_name" ng-model="usuario.last_name" class="form-control" placeholder="Sobrenome" ng-required="true"/>
+                    <br>
+                    <input type="email" name="email" ng-model="usuario.email" class="form-control" placeholder="Endereço de E-mail" ng-required="true"/>
+                    <br>
+                    <input type="date" name="birthdate" ng-model="usuario.birthdate" class="form-control" placeholder="Data de Nascimento" ng-required="true"/>
+                    <br>
+                    <input type="password" name="senha" ng-model="usuario.senha" class="form-control" placeholder="Senha" ng-required="true"/>
+                    <br>
+                    
+            </form>
+                    <div ng-show="usuarioForm.first_name.$invalid && usuarioForm.first_name.$dirty" class="alert alert-danger">
+                        First name is necessary for sign up!
+                    </div>
+                    <div ng-show="usuarioForm.last_name.$invalid && usuarioForm.last_name.$dirty" class="alert alert-danger">
+                        Last name is necessary for sign up!
+                    </div>
+                    <div ng-show="usuarioForm.email.$invalid && usuarioForm.email.$dirty" class="alert alert-danger">
+                        E-mail is necessary for sign up!
+                    </div>
+                    <div ng-show="usuarioForm.birthdate.$invalid && usuarioForm.birthdate.$dirty" class="alert alert-danger">
+                        Birth date is necessary for sign up!
+                    </div>
+                    <div ng-show="usuarioForm.senha.$invalid && usuarioForm.senha.$dirty" class="alert alert-danger">
+                        Password is necessary for sign up!
+                    </div>
+                    <button class="btn btn-lg btn-primary btn-block" ng-click="cadastrarUsuario(usuario)" ng-disabled="usuarioForm.$invalid" type="submit">Registrar</button>
+        </div>
