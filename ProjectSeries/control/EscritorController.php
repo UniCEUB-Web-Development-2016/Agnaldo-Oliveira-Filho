@@ -15,7 +15,7 @@ class EscritorController
 
         $conn = $db->getConnection();
 
-        $result = $conn->query("SELECT nme_escritor FROM escritor WHERE " . $crit);
+        $result = $conn->query("SELECT esc.nme_escritor, s.name_series  FROM escritor AS esc, series AS s WHERE esc.cod_serie = s.idt_serie AND " . $crit);
 
         return $result->fetchAll(PDO::FETCH_ASSOC);
 

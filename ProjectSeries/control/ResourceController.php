@@ -13,6 +13,7 @@ include_once "control/TemporadaController.php";
 include_once "control/UsuarioEpisodioController.php";
 include_once "control/AtorTemporadaController.php";
 include_once "control/PartEspecialController.php";
+include_once "control/UsuarioAssistindoController.php";
 
 class ResourceController
 {
@@ -31,6 +32,7 @@ class ResourceController
 		"usuario_episodio" => "UsuarioEpisodioController",
 		"ator_temporada" => "AtorTemporadaController",
 		"part_especial" => "PartEspecialController",
+		"usuario_assistindo" => "UsuarioAssistindoController",
 	];
 
 	public function createResource($request)

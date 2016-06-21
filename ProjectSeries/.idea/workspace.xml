@@ -22,29 +22,13 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="SeriesController.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/control/SeriesController.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="29" column="113" selection-start-line="29" selection-start-column="113" selection-end-line="29" selection-end-column="113" />
-              <folding>
-                <marker date="1466110646653" expanded="true" signature="468:475" placeholder="SELECT * FRO... series" />
-                <marker date="1466110646653" expanded="true" signature="468:886" placeholder="SELECT * FRO... series" />
-                <marker date="1466110646653" expanded="true" signature="468:891" placeholder="SELECT cod_c... series" />
-                <marker date="1466110646653" expanded="true" signature="969:1058" placeholder="SELECT * FRO... series" />
-                <marker date="1466110646653" expanded="true" signature="969:1065" placeholder="SELECT * FRO... series" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="SeriesCategoriaController.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/control/SeriesCategoriaController.php">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="19" column="81" selection-start-line="19" selection-start-column="81" selection-end-line="19" selection-end-column="81" />
+              <caret line="18" column="81" selection-start-line="18" selection-start-column="81" selection-end-line="18" selection-end-column="81" />
               <folding>
-                <marker date="1465773041511" expanded="true" signature="446:627" placeholder="SELECT s.nam... series_categoria" />
+                <marker date="1466355135045" expanded="true" signature="446:608" placeholder="SELECT s.nam... series_categoria" />
               </folding>
             </state>
           </provider>
@@ -53,7 +37,7 @@
       <file leaf-file-name="UsuarioController.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/control/UsuarioController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-9.153846">
+            <state vertical-scroll-proportion="0.0">
               <caret line="49" column="77" selection-start-line="49" selection-start-column="77" selection-end-line="49" selection-end-column="77" />
               <folding>
                 <marker date="1466111336638" expanded="true" signature="756:1069" placeholder="INSERT INTO user... " />
@@ -68,15 +52,50 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="EpisodioController.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="EpisodioController.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/control/EpisodioController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.6781411">
+            <state vertical-scroll-proportion="-15.153846">
               <caret line="59" column="21" selection-start-line="59" selection-start-column="21" selection-end-line="59" selection-end-column="21" />
               <folding>
-                <marker date="1466200664053" expanded="true" signature="650:687" placeholder="SELECT * FRO... episodio" />
-                <marker date="1466200664053" expanded="true" signature="1430:1518" placeholder="UPDATE episo... " />
+                <marker date="1466297170258" expanded="true" signature="424:600" placeholder="SELECT s.nam... episodio" />
+                <marker date="1466297170258" expanded="true" signature="1414:1502" placeholder="UPDATE episo... " />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="UsuarioAssistindoController.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/control/UsuarioAssistindoController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-0.0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding>
+                <marker date="1466454551860" expanded="true" signature="735:1048" placeholder="INSERT INTO usuario... " />
+                <marker date="1466454551860" expanded="true" signature="1367:1403" placeholder="SELECT * FRO... usuario" />
+                <marker date="1466454551860" expanded="true" signature="2131:2216" placeholder="UPDATE usuar... " />
+                <marker date="1466454551860" expanded="true" signature="2719:2754" placeholder="DELETE FROM " />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="usuario_episodio.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/model/usuario_episodio.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-5.6923075">
+              <caret line="72" column="0" selection-start-line="72" selection-start-column="0" selection-end-line="72" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="usuario_assistindo.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/model/usuario_assistindo.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.20998278">
+              <caret line="16" column="44" selection-start-line="16" selection-start-column="44" selection-end-line="16" selection-end-column="44" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -113,31 +132,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ControlManager.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/control/ControlManager.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="41" column="75" selection-start-line="41" selection-start-column="75" selection-end-line="41" selection-end-column="75" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="ResourceController.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/control/ResourceController.php">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
               <caret line="26" column="37" selection-start-line="26" selection-start-column="37" selection-end-line="26" selection-end-column="37" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="RequestController.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/control/RequestController.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="31" column="5" selection-start-line="31" selection-start-column="5" selection-end-line="31" selection-end-column="5" />
               <folding />
             </state>
           </provider>
@@ -156,7 +155,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/model/Request.php" />
         <option value="$PROJECT_DIR$/model/List.php" />
         <option value="$PROJECT_DIR$/model/Lista.php" />
         <option value="$PROJECT_DIR$/control/UserController.php" />
@@ -207,6 +205,7 @@
         <option value="$PROJECT_DIR$/control/SeriesCategoriaController.php" />
         <option value="$PROJECT_DIR$/control/UsuarioController.php" />
         <option value="$PROJECT_DIR$/control/EpisodioController.php" />
+        <option value="$PROJECT_DIR$/model/usuario_assistindo.php" />
       </list>
     </option>
   </component>
@@ -467,20 +466,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/model/escritor.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Downloads/arquivos AF/ceub/DW/CLASS CODES/Classes/Class13_DBConnection/util/RequestRouter.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.32185885">
-          <caret line="11" column="1" selection-start-line="11" selection-start-column="1" selection-end-line="11" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/Downloads/arquivos AF/ceub/DW/CLASS CODES/Classes/Class13_DBConnection/control/UserController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.32185885">
@@ -639,13 +624,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="7" column="10" selection-start-line="7" selection-start-column="10" selection-end-line="7" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/model/usuario_episodio.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="72" column="0" selection-start-line="72" selection-start-column="0" selection-end-line="72" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -808,13 +786,13 @@
     <entry file="file://$PROJECT_DIR$/control/SeriesController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="29" column="113" selection-start-line="29" selection-start-column="113" selection-end-line="29" selection-end-column="113" />
+          <caret line="29" column="71" selection-start-line="29" selection-start-column="71" selection-end-line="29" selection-end-column="71" />
           <folding>
-            <marker date="1466110646653" expanded="true" signature="468:475" placeholder="SELECT * FRO... series" />
-            <marker date="1466110646653" expanded="true" signature="468:886" placeholder="SELECT * FRO... series" />
-            <marker date="1466110646653" expanded="true" signature="468:891" placeholder="SELECT cod_c... series" />
-            <marker date="1466110646653" expanded="true" signature="969:1058" placeholder="SELECT * FRO... series" />
-            <marker date="1466110646653" expanded="true" signature="969:1065" placeholder="SELECT * FRO... series" />
+            <marker date="1466308874070" expanded="true" signature="468:475" placeholder="SELECT * FRO... series" />
+            <marker date="1466308874070" expanded="true" signature="468:886" placeholder="SELECT * FRO... series" />
+            <marker date="1466308874070" expanded="true" signature="468:891" placeholder="SELECT cod_c... series" />
+            <marker date="1466308874070" expanded="true" signature="969:989" placeholder="SELECT * FRO... series" />
+            <marker date="1466308874070" expanded="true" signature="969:996" placeholder="SELECT * FRO... series" />
           </folding>
         </state>
       </provider>
@@ -822,16 +800,16 @@
     <entry file="file://$PROJECT_DIR$/control/SeriesCategoriaController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="19" column="81" selection-start-line="19" selection-start-column="81" selection-end-line="19" selection-end-column="81" />
+          <caret line="18" column="81" selection-start-line="18" selection-start-column="81" selection-end-line="18" selection-end-column="81" />
           <folding>
-            <marker date="1465773041511" expanded="true" signature="446:627" placeholder="SELECT s.nam... series_categoria" />
+            <marker date="1466355135045" expanded="true" signature="446:608" placeholder="SELECT s.nam... series_categoria" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/control/UsuarioController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-9.153846">
+        <state vertical-scroll-proportion="0.0">
           <caret line="49" column="77" selection-start-line="49" selection-start-column="77" selection-end-line="49" selection-end-column="77" />
           <folding>
             <marker date="1466111336638" expanded="true" signature="756:1069" placeholder="INSERT INTO user... " />
@@ -847,12 +825,41 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/control/EpisodioController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6781411">
+        <state vertical-scroll-proportion="-15.153846">
           <caret line="59" column="21" selection-start-line="59" selection-start-column="21" selection-end-line="59" selection-end-column="21" />
           <folding>
-            <marker date="1466200664053" expanded="true" signature="650:687" placeholder="SELECT * FRO... episodio" />
-            <marker date="1466200664053" expanded="true" signature="1430:1518" placeholder="UPDATE episo... " />
+            <marker date="1466297170258" expanded="true" signature="424:600" placeholder="SELECT s.nam... episodio" />
+            <marker date="1466297170258" expanded="true" signature="1414:1502" placeholder="UPDATE episo... " />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/control/UsuarioAssistindoController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1466454551860" expanded="true" signature="735:1048" placeholder="INSERT INTO usuario... " />
+            <marker date="1466454551860" expanded="true" signature="1367:1403" placeholder="SELECT * FRO... usuario" />
+            <marker date="1466454551860" expanded="true" signature="2131:2216" placeholder="UPDATE usuar... " />
+            <marker date="1466454551860" expanded="true" signature="2719:2754" placeholder="DELETE FROM " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/model/usuario_episodio.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-5.6923075">
+          <caret line="72" column="0" selection-start-line="72" selection-start-column="0" selection-end-line="72" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/model/usuario_assistindo.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.20998278">
+          <caret line="16" column="44" selection-start-line="16" selection-start-column="44" selection-end-line="16" selection-end-column="44" />
+          <folding />
         </state>
       </provider>
     </entry>

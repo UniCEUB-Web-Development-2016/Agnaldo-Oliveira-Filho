@@ -1,9 +1,5 @@
-angular.module("ProjectSeries").controller("userCtrl", function ($scope, $http) 
+angular.module("ProjectSeries").controller("userCtrl", function ($scope, $http, $routeParams, usuario, status) 
 {
-		var carregarUsuario = function() {
-			$http.get("http://localhost/ProjectSeries/usuario/?first_name=Agnaldo").success(function (data) {
-				$scope.usuario = data;
-			});
-		};
-		carregarUsuario();
+	$scope.usuario = usuario.data;
+	$scope.status = status.data;
 });

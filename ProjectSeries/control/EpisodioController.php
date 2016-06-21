@@ -16,7 +16,7 @@ class EpisodioController
 
         $conn = $db->getConnection();
 
-        $result = $conn->query("SELECT s.name_series, t.num_temporada, e.num_episodio FROM episodio AS e, series AS s, temporada AS t WHERE s.idt_serie = t.cod_serie AND t.idt_temporada = e.cod_temporada AND ".$crit);
+        $result = $conn->query("SELECT e.idt_episodio, e.cod_temporada, s.name_series, t.num_temporada, e.num_episodio FROM episodio AS e, series AS s, temporada AS t WHERE s.idt_serie = t.cod_serie AND t.idt_temporada = e.cod_temporada AND ".$crit);
 		 // $result = $conn->query("SELECT * FROM episodio WHERE 1=1 and ".$crit);]
 
         return $result->fetchAll(PDO::FETCH_ASSOC);

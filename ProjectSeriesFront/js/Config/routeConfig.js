@@ -13,16 +13,6 @@ angular.module("ProjectSeries").config(function($routeProvider){
 		}
 
 	});
-	$routeProvider.when("/statusSeries/:idt_serie",{
-		templateUrl: "view/statusSeries.html",
-		controller: "statusSeriesCtrl",
-		resolve:{
-			epSerie: function(seriesAPI, $route){
-				return seriesAPI.getEpisodios($route.current.params.idt_serie);
-			}
-		}
-
-	});
 	$routeProvider.when("/series/:idt_serie",{
 		templateUrl: "view/series.html",
 		controller: "seriesCtrl",
@@ -32,30 +22,61 @@ angular.module("ProjectSeries").config(function($routeProvider){
 			},
 			serieEp: function(seriesAPI, $route){
 				return seriesAPI.getEpisodios($route.current.params.idt_serie);
-			}/*,
-			ator: function(atorAPI){
-				return atorAPI.getAtores();
 			},
-			escritor: function(escritorAPI){
-				return escritorAPI.getEscritor();
+			atorSerie: function(seriesAPI, $route){
+				return seriesAPI.getAtores($route.current.params.idt_serie);
 			},
-			temporada: function(temporadaAPI){
-				return temporadaAPI.getTemporada();
-			},
-			episodio: function(episodioAPI){
-				return episodioAPI.getEpisodio();
-			}*/
+			escritorSerie: function(seriesAPI, $route){
+				return seriesAPI.getEscritor($route.current.params.idt_serie);
+			}
 		}
 
 	});
-	$routeProvider.when("/userPage",{
-		templateUrl: "view/userPage.html",
-		controller: "userCtrl"
+	$routeProvider.when("/listUsuarios",{
+		templateUrl: "view/listUsuarios.html",
+		controller: "listUsuariosCtrl",
+		resolve: {
+			usuarios: function(listUsuariosAPI){
+				return listUsuariosAPI.getUsuarios();
+			}
+		}
 
 	});
+	
+	$routeProvider.when("/userPage/:idt_usuario",{
+		templateUrl: "view/userPage.html",
+		controller: "userCtrl",
+		resolve: {
+			usuario: function(listUsuariosAPI, $route){
+				return listUsuariosAPI.getUsuario($route.current.params.idt_usuario);
+			},
+			status: function(usuarioAPI, $route){
+				return usuarioAPI.getStatus($route.current.params.idt_usuario);
+			}
+		}
+
+	});
+	
 	$routeProvider.when("/signUpPage",{
 		templateUrl: "view/signUpPage.html",
 		controller: "signUpPageCtrl"
+
+	});
+	
+	$routeProvider.when("/signInPage",{
+		templateUrl: "view/signInPage.html",
+		controller: "signInPageCtrl"
+
+	});
+
+	$routeProvider.when("/atualizaPerfil/:idt_usuario",{
+		templateUrl: "view/atualizaPerfil.html",
+		controller: "atualizaPerfilCtrl",
+		resolve:{
+			usuario: function(listUsuariosAPI, $route){
+				return listUsuariosAPI.getUsuario($route.current.params.idt_usuario);
+			}
+		}
 
 	});
 	$routeProvider.otherwise({redirectTo:"/principal"})

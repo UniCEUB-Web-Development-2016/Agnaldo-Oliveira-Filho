@@ -1,4 +1,4 @@
-<script src="js/listSeriesCtrl.js"></script>
+<script src="js/listUsuariosCtrl.js"></script>
 <script scr="lib/angular.min.js"></script>
 <style>
 	.jumbotron{
@@ -7,12 +7,16 @@
 		margin-left: auto;
 		margin-right: auto;
 	}
+  .center{
+    margin-left: auto;
+    margin-right: auto;
+  }
 </style>
 <div>   
   <div class="jumbotron">
     <div class="row content">
       <div class="col-md-6">
-        <h2>Lista de Séries:</h2>
+        <h2>Lista de Usuários:</h2>
       </div>
       <div class="col-md-6">
         <form class="navbar-form navbar-right" role="search">
@@ -27,9 +31,16 @@
         </form>
       </div>
     </div>
-    <div class="list-group" ng-controller="listSeriesCtrl">
-      <div ng-repeat="serie in listSeries | filter:test">
-       <a href="#/series/{{serie.idt_serie}}" class="list-group-item">{{serie.name_series}}</a>
+    <div  ng-controller="listUsuariosCtrl">
+      <div>
+        <table class="center">
+          <tr ng-repeat="usuario in listUsuarios | filter:test">
+           <td><h3>{{usuario.first_name}}</h3></td>
+           <td><a class="btn btn-primary" href="#/userPage/{{usuario.idt_usuario}}">Ver Perfil</a></td>
+           <td><a class="btn btn-success" href="#/atualizaPerfil/{{usuario.idt_usuario}}">Atualizar Perfil</a></td>
+           <td><a class="btn btn-danger" ng-click="deleteUsuarios(usuario.email)" href="#">Deletar Perfil</a></td>
+         </tr>
+       </table>
      </div>
    </div>
  </div>

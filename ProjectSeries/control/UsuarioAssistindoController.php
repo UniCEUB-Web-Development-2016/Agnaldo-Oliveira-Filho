@@ -1,22 +1,20 @@
 <?php
 
 include_once "model/Request.php";
-include_once "model/usuario.php";
+include_once "model/usuario_assistindo.php";
 include_once "database/DBConnector.php";
 
-class UsuarioController
+class UsuarioAssistindoController
 {
     public function register($request)
     {
         $params = $request->get_params();
-        $user = new usuario
-           ($params["idt_usuario"],
-            $params["first_name"],
-            $params["last_name"],
-            $params["email"],
-            $params["birthdate"],
-            $params["senha"],
-            $params["cod_perfil"]);
+        $user = new usuario_assistindo
+           ($params["idt_usuario_assistindo"],
+            $params["cod_usuario"],
+            $params["cod_serie"],
+            $params["cod_temporada"],
+            $params["cod_episodio"]);
 
         $db = new DBConnector("localhost", "mydb", "mysql", "", "root", "");
 
@@ -28,12 +26,10 @@ class UsuarioController
 
     private function generateInsertQuery($user)
     {
-        $query =  "INSERT INTO usuario (first_name, last_name, email, birthdate, senha, cod_perfil) VALUES ('".$user->getFirstName()."','".
-            $user->getLastName()."','".
-            $user->getEmail()."','".
-            $user->getBirthDate()."','".
-            $user->getSenha()."','".
-            $user->getCodPerfil()."')";
+        $query =  "INSERT INTO usuario_assistindo (cod_usuario, cod_serie, cod_temporada, cod_episodio) VALUES ('".$user->getCodUsuario()."','".
+            $user->getCodSerie()."','".
+            $user->getCodTemporada()."','".
+            $user->getCodEpisodio()."')";
 
         return $query;
     }
@@ -47,7 +43,9 @@ class UsuarioController
 
         $conn = $db->getConnection();
 
-        $result = $conn->query("SELECT * FROM usuario WHERE 1=1 AND ".$crit);
+        $result = $conn->query("SELECT s.name_series, s.synopsis, ua.cod_usuario, u.first_name, t.num_temporada, ep.num_episodio FROM usuario_assistindo AS ua, usuario AS u, series AS s, temporada AS t, episodio AS ep WHERE ua.cod_usuario = u.idt_usuario AND ua.cod_serie = s.idt_serie AND ua.cod_temporada = t.idt_temporada AND ua.cod_episodio = ep.idt_episodio AND ".$crit);
+        //$result = $conn->query("SELECT * FROM usuario_assistindo WHERE 1=1 AND ".$crit);
+
 
         return $result->fetchAll(PDO::FETCH_ASSOC);
 
@@ -58,13 +56,13 @@ class UsuarioController
         $criteria = "";
         foreach($params as $key => $value)
         {
-            $criteria = $criteria.$key." LIKE '%".$value."%' AND ";
+            $criteria = $criteria.$key."  = '".$value."' OR ";
         }
 
         return substr($criteria, 0, -4);
     }
 
-    public function update($request)
+    /*public function update($request)
     {
         $params = $request->get_params();
 
@@ -79,7 +77,7 @@ class UsuarioController
     {
         $crit = $this->generateUpdateCriteria($params);
 
-        return "UPDATE usuario SET " . $crit . " WHERE idt_usuario = '" . $params["idt_usuario"] . "'";
+        return "UPDATE usuario_assistindo SET " . $crit . " WHERE idt_usuario_assistindo = '" . $params["idt_usuario_assistindo"] . "'";
     }
 
     private function generateUpdateCriteria($params)
@@ -91,24 +89,7 @@ class UsuarioController
         }
 
         return substr($criteria, 0, -2);
-    }
-
-    public function remove($request)
-    {
-        $params = $request->get_params();
-
-        $db = new DBConnector("localhost", "mydb", "mysql", "", "root", "");
-
-        $conn = $db->getConnection();
-
-        $result = $conn->prepare("DELETE FROM usuario WHERE email = ?");
-
-        $result->bindParam(1, $params['email']);
-
-        $result->execute();
-
-        return $result;
-    }
+    }*/
 
     private function isValid($parameters)
     {
